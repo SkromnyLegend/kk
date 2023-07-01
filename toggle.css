@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.toggle{
+    width: 80px;
+    height: 40px;
+    margin: auto;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.toggle__label{
+    width: 100%;
+    height: 100%;
+    background: #ddd;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2px;
+    transition: .3s;
+    cursor: pointer;
+    padding: 2px;
+}
+.toggle__circle{
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 2px 2px 3px #0001;
+  transition: .3s;
+}
+#check{
+    position: relative;
+    z-index: 3;
+    display: none;
+}
+#check:checked + .toggle__label .toggle__circle{
+    transform: translatex(40px);
+
+}
+#check:checked + .toggle__label{
+    background: #6edc5f;
+}

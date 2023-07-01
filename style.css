@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.title{
+    text-align: center;
+    color: red;
+}
+.photo{
+    width: 300px;
+    display: block;
+    margin: 40px auto;
+
+    
+    transition: .5s;
+}
+.photo:hover{
+    filter: blur(5px);
+    filter: brightness(130%);
+    filter: contrast(150%);
+    filter: grayscale(100%);
+    filter: hue-rotate(100deg);
+    filter: invert(100%);
+    filter: saturate(150%);
+    filter: sepia(150%);
+
+    filter: blur(3px) brightness(120%) sepia(100%);
+
+}
+.container{
+    width: 80%;
+    height: 500px;
+    border: 1px solid red;
+    margin: 30px auto;
+}
+.container p{
+    border: 1px solid  blue;
+    display: inline;
+}
+.container span{
+    border: 1px solid green;
+    display: block;
+
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border: solid 1px red;
+    display: inline-block;
+    padding: 10px;
+
+}
+.hiideb{
+    width: 100px;
+    height: 100px;
+    background: black;
+    opacity: #000;
+
+    display: none;
+}
+.main{
+    border: 1px solid blue;
+}
+/* combination */
+/* > - only child */
+/* + - only one neighbot */
+/* ~ - all neighbors */
+.main p{
+    color: red;
+}
